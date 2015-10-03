@@ -1,6 +1,4 @@
-﻿#from complex import Complex
-import unittest
-import sys
+﻿import sys
 from meetup_five.File import CustomFile
 from meetup_five.FileProcessor import CustomFileProcessor
 

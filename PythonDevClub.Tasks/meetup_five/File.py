@@ -11,12 +11,26 @@
             raise IOError('File was not loaded')
 
     def get_word_count(self):
-        wordCount = 0
+        word_count = 0
         if self.isFileLoaded:
             for x in self.fileContents:
                 temp = str(x).split()
-                wordCount += len(temp)
-        return wordCount
+                word_count += len(temp)
+        return word_count
+    
+    def get_word_statistics(self):
+        result_dict = dict()
+        if self.isFileLoaded:
+            for row in self.fileContents:
+                words_in_row = str(row).split()
+                for word in words_in_row:
+                    word_count = 1
+                    if word in result_dict:
+                        old_count = result_dict[word]
+                        result_dict[word] = old_count + word_count
+                    else:
+                        result_dict[word] = word_count
+        return result_dict
     
     def get_row_count(self):
         rowCount = 0

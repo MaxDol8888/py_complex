@@ -15,6 +15,7 @@ class CustomFileProcessor(object):
             print(file.get_row_count())
             print(file.get_unique_word_count())
             print(file.get_word_count())
+            print(file.get_word_statistics())
 
     def save_to_csv(self):
         with open(self.filePath, 'w') as csvfile:
