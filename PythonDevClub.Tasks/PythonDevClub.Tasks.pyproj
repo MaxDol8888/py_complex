@@ -26,9 +26,26 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="complex.py" />
+    <Compile Include="meetup_five\File.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="meetup_five\FileProcessor.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="meetup_five\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="tests.py">
       <SubType>Code</SubType>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="meetup_five\" />
+    <Folder Include="data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="data\text2.txt" />
+    <Content Include="data\text1.txt" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
